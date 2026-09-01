@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
         android:theme="@android:style/Theme.Material.Light.NoActionBar"
@@ -16,5 +17,7 @@
         </activity>
 
     </application>
-
+<service
+    android:name=".VolumeService"
+    android:exported="false"/>
 </manifest>
